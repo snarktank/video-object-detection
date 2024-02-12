@@ -2,6 +2,8 @@
 
 This Python script utilizes the [DETR (DEtection TRansformer) model](https://huggingface.co/facebook/detr-resnet-50) for object detection in videos. It processes a video file, detects objects frame by frame, and outputs a new video with bounding boxes drawn around the detected objects. The script is designed to run on systems with Gaudi2 support, leveraging the power of the Habana Gaudi2 AI processors for efficient deep learning inference.
 
+You can provision a Gaudi2® Deep Learning Server (8 x Gaudi2® HL-225H mezzanine cards - 3rd Gen Xeon® 8380 Processor) @ $10.42 / hour with 1 TB RAM and 30 TB disk by creating an account at [https://console.cloud.intel.com/](https://console.cloud.intel.com/).
+
 ## Prerequisites
 
 - Python 3.6 or later

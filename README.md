@@ -12,8 +12,6 @@ You can provision a Gaudi2® Deep Learning Server (8 x Gaudi2® HL-225H mezzanin
 - Transformers library
 - PIL (Python Imaging Library)
 
-Ensure that your environment is set up to support Habana Gaudi2 processors if you intend to leverage them for running this script.
-
 ## Installation
 
 1. Clone this repository or download the script directly.
@@ -23,11 +21,9 @@ Ensure that your environment is set up to support Habana Gaudi2 processors if yo
 pip install torch torchvision opencv-python pillow transformers
 ```
 
-3. Ensure that your system is configured correctly for Habana Gaudi2 processors. Follow the official [Habana documentation](https://docs.habana.ai/) for setup instructions.
-
 ## Usage
 
-1. Modify the `video-object-detection-gaudi2.py` script to point to the input video file by changing the `cv2.VideoCapture` path:
+1. Modify the `process.py` script to point to the input video file by changing the `cv2.VideoCapture` path:
 
 ```python
 cap = cv2.VideoCapture('/path/to/your/video/file.mov')

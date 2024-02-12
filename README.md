@@ -1,6 +1,6 @@
 # Video Object Detection with DETR and Gaudi2
 
-This Python script utilizes the DETR (DEtection TRansformer) model for object detection in videos. It processes a video file, detects objects frame by frame, and outputs a new video with bounding boxes drawn around the detected objects. The script is designed to run on systems with Gaudi2 support, leveraging the power of the Habana Gaudi2 AI processors for efficient deep learning inference.
+This Python script utilizes the [DETR (DEtection TRansformer) model](https://huggingface.co/facebook/detr-resnet-50) for object detection in videos. It processes a video file, detects objects frame by frame, and outputs a new video with bounding boxes drawn around the detected objects. The script is designed to run on systems with Gaudi2 support, leveraging the power of the Habana Gaudi2 AI processors for efficient deep learning inference.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ out = cv2.VideoWriter('/path/to/output/video.avi', fourcc, 20.0, (width, height)
 3. Run the script:
 
 ```bash
-python video-object-detection-gaudi2.py
+python process.py
 ```
 
 The script will process the input video, detect objects in each frame, and output a new video with bounding boxes and labels for detected objects.

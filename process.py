@@ -19,11 +19,11 @@ def draw_boxes(boxes, labels, scores, image):
             cv2.putText(image, f'{label}: {score:.2f}', (box[0], box[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
 # Change this line to use the video file instead of a camera
-cap = cv2.VideoCapture('/Users/ryan/Movies/ryan.mov')  # Adjust the path as necessary
+cap = cv2.VideoCapture('./your_movie.mov')  # Adjust the path as necessary
 
 # Define the codec and create VideoWriter object to save the output
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('/Users/ryan/Movies/processed_ryan_imac.avi', fourcc, 20.0, (1620, 1080))  # Adjust the frame size to match ryan.mov
+out = cv2.VideoWriter('./your_movie_processed.avi', fourcc, 20.0, (1620, 1080))  # Adjust the frame size to match your_movie.mov
 
 total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))  # Get the total number of frames in the video
 processed_frames = 0  # Initialize a counter for processed frames
